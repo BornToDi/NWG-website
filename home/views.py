@@ -19,3 +19,5 @@ def jobpostpage(request):
 def jobpage(request):
     return render(request, 'alljob.html')
 
+def allproductpage(request):
+    return render(request, 'product.html')
