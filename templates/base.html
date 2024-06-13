@@ -32,7 +32,7 @@
           <img
             src="{% static 'image/networld-removebg-preview.png' %}"
             alt="logo"
-            class="w-60 ml-10"
+            class="w-40 xl:w-60 xl:ml-10"
           />
         </a>
 
@@ -204,7 +204,7 @@
           <!--home-->
           <div >
             <button
-            class="outline-none focus:outline-none px-3 py-1 bg-white rounded-sm flex items-center ml-2 min-w-32"
+            class="outline-none focus:outline-none px-3 py-1 bg-white rounded-sm flex items-center  min-w-32"
           >
             <a href="{% url 'index' %}" class="font-semibold">Home</a>
             
@@ -218,7 +218,7 @@
               <span class="pr-1 font-semibold flex-1">Products</span>
               <span>
                 <svg
-                  class="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out"
+                  class="fill-current items-center h-6 w-6 mt-2 transform group-hover:-rotate-180 transition duration-150 ease-in-out"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                 >
@@ -300,17 +300,17 @@
 <!--team-->
           <div>
             <button
-              class="outline-none focus:outline-none px-3 py-1 bg-white rounded-sm flex items-center ml-2 min-w-32"
+              class="outline-none focus:outline-none px-3 py-1 bg-white rounded-sm flex items-center  min-w-32"
             >
-              <a href="{% url 'index' %}" class="font-semibold">Team</a>
+              <a href="{% url 'team' %}" class="font-semibold">Team</a>
             </button>
           </div>
 <!--contact-->
           <div>
             <button
-              class="outline-none focus:outline-none px-3 py-1 bg-white rounded-sm flex items-center ml-2 min-w-32"
+              class="outline-none focus:outline-none px-3 py-1 bg-white rounded-sm flex items-center  min-w-32"
             >
-              <a href="{% url 'index' %}" class="font-semibold">Contact</a>
+              <a href="{% url 'contact' %}" class="font-semibold">Contact</a>
             </button>
           </div>
 
@@ -320,7 +320,7 @@
       <div class="flex-1" @click="open = false"></div>
     </div>
 
-    <main>{% block base %} {% endblock %}</main>
+    <main class="bg-white">{% block base %} {% endblock %}</main>
 
     <!--footer-->
     <footer class="bg-black rounded-xl" aria-labelledby="footer-heading">
@@ -426,16 +426,17 @@
                 </ul>
               </div>
               <div class="mt-10 md:mt-0">
-                <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
+                <h3 class="text-sm font-semibold leading-6 text-white">Job Offer</h3>
+                
                 <ul role="list" class="mt-6 space-y-4">
                   <li>
-                      <a href="#" class="text-sm leading-6 text-white hover:white">Claim</a>
+                    <a href="{% url 'alljob' %}" class="animate-link text-sm text-white">Open roles <span aria-hidden="true">&rarr;</span></a> <br>
                     </li>
                   <li>
-                      <a href="#" class="text-sm leading-6 text-white hover:white">Privacy</a>
+                    <a href="{% url 'post' %}" class="animate-link text-sm text-white">Internship program <span aria-hidden="true">&rarr;</span></a> <br>
                     </li>
                   <li>
-                      <a href="#" class="text-sm leading-6 text-white hover:white">Terms</a>
+                    <a href="{% url 'index' %}" class="animate-link text-sm text-white">Our Project <span aria-hidden="true">&rarr;</span></a> <br>
                     </li>
                   
                 </ul>

@@ -21,12 +21,12 @@
       </p>
     </div>
   
-      <div class="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end">
+      <div class="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 xl:justify-end ">
        
-          <div class="relative h-80 mt-32 lg:h-auto lg:w-full lg:grow xl:ml-0">
+          <div class="relative h-80 md:mt-32 lg:h-auto lg:w-full lg:grow xl:ml-0">
             <img class="absolute inset-0 h-[500px] w-[600px] mx-auto flex justify-center items-center bg-gray-50 object-cover" src="https://sc04.alicdn.com/kf/He2e6ac141a1b4bdb8653f2e841963ef1Y.jpg" alt="">
           </div>
-          <div class="mx-auto text-justify max-w-2xl pb-24 pt-16 sm:pb-32 sm:pt-20 lg:ml-8 lg:mr-0 lg:w-full lg:max-w-lg lg:flex-none lg:pt-32 xl:w-1/2">
+          <div class="mx-auto text-justify max-w-2xl pb-24 pt-44 sm:pb-32 sm:pt-20 lg:ml-8 lg:mr-0 lg:w-full lg:max-w-lg lg:flex-none lg:pt-32 xl:w-1/2">
               <p class="text-base font-semibold leading-7 text-indigo-600 animate-slide-in animate-delay-1">Deploy faster</p>
               <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl animate-slide-in animate-delay-2">A better workflow</h1>
               <p class="mt-6 text-sm leading-8 text-gray-700 animate-slide-in animate-delay-3">
@@ -120,9 +120,10 @@
                     </ul>
                 </div>
             </div>
-            <button class="mt-8 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded animation-trigger3">
+            <button class="animation-trigger3 mt-8 outline-2 text-black font-bold py-2 px-4 rounded shadow-lg glow-effect animated-glow">
                 GET THE BROCHURE
             </button>
+            
         </div>
     </div>
     </div>
@@ -340,5 +341,20 @@ body {
         transform: translatex(0);
     }
 
+
+    /*button*/
+    .glow-effect {
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.6); /* Light cyan glow */
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 30px rgba(0, 255, 255, 0.6); }
+            50% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.8); }
+            100% { box-shadow: 0 0 10px rgba(0, 255, 255, 0.6); }
+        }
+
+        .animated-glow {
+            animation: glow 1.5s infinite;
+        }
   </style>
 {% endblock %}
